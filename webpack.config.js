@@ -24,7 +24,7 @@ module.exports = {
     plugins:[
         new workboxPlugin({
             globDirectory: "public",
-            globPatterns: ['**/*.{html,js}'],
+            globPatterns: ['**/*.{html,js}', '/'],
             swDest: 'public/js/sw.js',
             clientsClaim: true,
             skipWaiting: true,
